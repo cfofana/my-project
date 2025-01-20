@@ -1,3 +1,19 @@
-body {
-    background-color: red;
+:root {
+
 }
+
+/* General styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+h1,
+ul {
+    margin: 0;
+}
+
+/* Reusable classes */
+
+/* Custom styling */
