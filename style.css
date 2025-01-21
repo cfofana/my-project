@@ -172,6 +172,22 @@ header {
     height: 30px;
 }
 
+.hero {
+    padding: 100px 0;
+    background-color: #FFF;
+    color: #000;
+}
+.hero__img {
+    margin-top: 0.5em;
+}
+
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+
+
 /* Reusable classes */
 
 /* Custom styling */
