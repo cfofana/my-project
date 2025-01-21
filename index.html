@@ -10,10 +10,10 @@
     <meta name="description" content="Ceesay Fofana's personal website">
     <title>Ceesay | Portfolio</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css">
      <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -22,18 +22,40 @@
         <![endif]-->
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav primary-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#myInfo" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    <header> 
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <a class="logo" href="#">
+                <img src="img/logo.svg" alt="My initials C and F, which stand for Ceesay Fofana">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+                </ul>
+                <ul class="nav__list nav__list--secondary">
+                    <li class="nav__item"><a href="#" class="nav__link">Contact </a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--button">Contact me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
+    <!-- <header>
+        <div class="container">
+            <nav class="nav primary-nav">
+                <ul class="nav--list">
+                    <li class="nav--item"><a href="index.html" class="nav--link">Home</a></li>
+                    <li class="nav--item"><a href="#myInfo" class="nav--link">About</a></li>
+                    <li class="nav--item"><a href="#portfolio" class="nav--link">Work</a></li>
+                    <li class="nav--item"><a href="#contact" class="nav--link">Contact</a></li>
+                </ul>
+            </nav>
+        </div> -->
+    <!-- </header> -->
 
     <section class="hero">
         <div class="container">
@@ -97,20 +119,22 @@
     </main>
 
     <footer>
-        <div id="socialMedia">
-            <p> Social Media</p>
-    
-            <a href="https://www.instagram.com/ceesay65/" target="_blank"><i class="insta fa fa-instagram fa-3x"></i></a>
-    
-            <a href="https://www.facebook.com/ceesay.fofana.9" target="_blank"><i class="facebook fa fa-facebook-square fa-3x"></i></a>
-    
-            <a href="https://www.linkedin.com/in/ceesay" target="_blank"><i class="linkedin fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-    
-            <a href="https://github.com/cfofana" target="_blank"><i class="github fa fa-github fa-3x"></i></a>
-    
-            <div id="copyright">Copyright &copy; 2018. </div>
+        <div class="container">
+            <div id="socialMedia">
+                <p> Social Media</p>
+        
+                <a href="https://www.instagram.com/ceesay65/" target="_blank"><i class="insta fa fa-instagram fa-3x"></i></a>
+        
+                <a href="https://www.facebook.com/ceesay.fofana.9" target="_blank"><i class="facebook fa fa-facebook-square fa-3x"></i></a>
+        
+                <a href="https://www.linkedin.com/in/ceesay" target="_blank"><i class="linkedin fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+        
+                <a href="https://github.com/cfofana" target="_blank"><i class="github fa fa-github fa-3x"></i></a>
+        
+                <div id="copyright">Copyright &copy; 2018. </div>
+            </div>
         </div> 
     </footer>
-    
+   <script src="main.js"></script> 
 </body>
 </html>
