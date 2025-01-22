@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+    
+        <link href="weatherappCSS.css" rel="stylesheet">
+    
+    </head>
+    <body>
+
+        <div id="bodyPage" >
+
+          <p id="placeName"></p>
+          <p id="descrip"></p>
+          <img id="weaImg" src="" />
+
+          <p id="testing">---</p>
+
+          <p id="humidity"></p>
+          <p><a id="fah" href="#">&deg;F</a>
+             <a id="cel" href="#">&deg;C</a>
+          </p>
+
+          <p>
+            <div id="cityForm">
+            <label>City : </label>
+                <input id="cities" value = "">
+            <button id="ent">Enter</button>
+            </div> 
+         </p>
+
+          <p id="error"></p>
+
+        </div> <!-- closes bodyPage div -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="weatherappJS.js"></script>
+    </body>
+</html>

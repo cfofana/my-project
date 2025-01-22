@@ -1,0 +1,94 @@
+*{
+  margin:0;
+  padding:10px;
+}
+
+#bodyPage{
+  text-align:center;
+  margin:0 auto;
+  max-width: 100%;
+  width:600px;
+  height:400px;
+  padding-top:3%;
+  padding-bottom:4%;
+  margin-top:2%;
+  margin-bottom:1%;
+  background-color:beige;
+  border: 1px outset gray;
+  border-radius:14px;
+  font-family: 'Gentium Basic', serif;
+  font-weight:bold;
+  font-size: 40px;
+}
+body{
+  background-image: url("https://res.cloudinary.com/dy17ukfwa/image/upload/v1489268687/sunrise-2125136_1920_mioln3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;  
+  position: relative;
+  background-position:center;    
+}
+a{
+  text-decoration:none;
+}
+#cityForm{
+  display:none;
+}
+#placeName{
+  font-size:50px;
+  font-weight:bold;
+  font-family: 'Courgette', cursive;
+}
+
+
+
+@media only screen and (min-width: 1466px){
+  #bodyPage{
+      width: 800px; 
+      font-size: 60px;
+      height: 600px;
+  }
+  #placeName{
+    font-size:80px;
+  }
+}
+@media only screen and (max-width:680px){
+    #bodyPage{
+        width:80%;
+        height:500px;
+    }
+}
+@media only screen and (max-width:530px){
+    #bodyPage{
+        width:90%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+  #bodyPage{
+      width:90%;  
+  }
+    
+}
+@media only screen and (max-width: 379px){
+    #bodyPage {
+      width: 90%;
+      height: 440px;
+      font-size: 30px;
+  }
+  
+  #placeName{
+    font-size: 33px;
+}
+}
+
+
+@media only screen and (max-width:260px){
+    #bodyPage{
+        font-size:17px;
+        height:100%;
+    } 
+    #placeName{
+        font-size:19px;
+    }
+} 
