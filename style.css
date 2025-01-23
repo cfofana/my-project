@@ -186,6 +186,11 @@ header {
     margin-bottom: 3em;
 }
 
+footer {
+    padding: 1em 0;
+    background-color: var(--clr-primary);
+}
+
 
 
 /* Reusable classes */
