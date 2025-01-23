@@ -200,6 +200,11 @@ footer {
     background-color: var(--clr-primary);
 }
 
+.social-media--link {
+    color: var(--clr-neutral);
+    text-decoration: none;
+}
+
 
 
 /* Reusable classes */
