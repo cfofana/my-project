@@ -186,6 +186,10 @@ header {
     margin-bottom: 3em;
 }
 
+.primary-content {
+    padding: 2.5em 0;
+}
+
 footer {
     padding: 1em 0;
     background-color: var(--clr-primary);
