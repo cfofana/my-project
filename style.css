@@ -190,6 +190,11 @@ header {
     padding: 2.5em 0;
 }
 
+.myInfoContact {
+    background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
+    padding: 2.5em;
+}
+
 footer {
     padding: 1em 0;
     background-color: var(--clr-primary);
