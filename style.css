@@ -1,7 +1,8 @@
 :root {
     --clr-primary: #DCCAE9;
     --clr-accent:#2C1B47;
-    --clr-neutral: #000;
+    --clr-neutral-100: #000;
+    --clr-neutral-900: #FFF;
 
     --fw-body: 400;
     --fw-nav: 600;
@@ -186,18 +187,38 @@ header {
     margin-bottom: 3em;
 }
 
+.portfolio-content--title {
+    text-align: center;
+    color: var(--clr-accent);
+}
+
 .primary-content {
-    padding: 2.5em 0;
+    margin: 0 0 3em 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.primary-content--title {
+    text-align: center;
+}
+
+.primary-content--text {
+    padding: 0 2em 2em;
+}
+
+.primary-content--link {
+    color: var(--clr-primary);
+    text-decoration: none;
 }
 
 .myInfoContact {
-    background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
+    background: linear-gradient(-94deg, var(--clr-accent), var(--clr-primary));
     padding: 2.5em;
 }
 
 footer {
     padding: 1em 0;
     background-color: var(--clr-primary);
+    text-align: center;
 }
 
 .social-media--link {
