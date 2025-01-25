@@ -245,7 +245,15 @@ footer {
     text-decoration: none;
 }
 
+.linkedin:hover,
+.linkedin:focus {
+    color: #0077B5;
+}
 
+.github:hover,
+.github:focus {
+    color: #702B84;
+}
 
 /* Reusable classes */
 
