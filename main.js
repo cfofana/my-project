@@ -9,4 +9,4 @@ navToggle.addEventListener('click', () => {
 // Get date and display it in copyright section
 const dateObject = new Date();
 const dateYear = dateObject.getFullYear();
-document.querySelector(".copyright").innerHTML = dateYear;
+document.querySelector(".copyright").innerHTML = "Copyright " + dateYear;

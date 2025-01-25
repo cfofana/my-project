@@ -1,13 +1,14 @@
 :root {
     --clr-primary: #DCCAE9;
-    --clr-accent:#2C1B47;
+    --clr-accent-200: #724C9D;
+    --clr-accent-700:#2C1B47;
     --clr-neutral-100: #000;
     --clr-neutral-900: #FFF;
 
     --fw-body: 400;
     --fw-nav: 600;
     --fw-heading: 700;
-    --fw-btn: 500;
+    --fw-btn: 900;
 
     --ff-body: "Montserrat", serif;
     --ff-nav: "Playfair Display", serif;
@@ -47,9 +48,11 @@ h1 {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase; 
-    color: #23424A;
-    font-weight: 900;
-    background-color: #38CFD9;
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-accent-700);
+    /* color: #23424A; */
+    font-weight: var(--fw-btn);
+    /* background-color: #38CFD9; */
     padding: .75em 2em;
     border-radius: 100px;
 }
@@ -57,6 +60,12 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+
+.btn-dark {
+    background-color: var(--clr-accent-700);
+    color: var(--clr-neutral-900);
+    margin-bottom: 1em;
 }
 
 .container {
@@ -84,7 +93,7 @@ header {
     height: 3em;
     padding: 0em;
     border-radius: 50%;
-    background: #072A2D;
+    background: var(--clr-accent-700);
     color: white;
     transition: opacity 250ms ease;
     position: absolute;
@@ -148,7 +157,7 @@ header {
 
 .nav__item:hover,
 .nav__item:focus {
-    opacity: 0.75;
+    opacity: 0.65;
 }
 
 .nav__link {
@@ -157,20 +166,25 @@ header {
     text-transform: uppercase;
 }
 
-.nav__link--button {
+/* .nav__link--button {
     background-color: #fff;
     color: #23424A;
     padding: 0.5em 1.2em;
     border: none;
     border-radius: 100px;
-}
+} */
+
 
 .nav__list--primary {
     margin-bottom: 1em;
 }
 
-.logo {
-    height: 30px;
+/* .logo {
+    /* height: 30px; */
+/* }  */
+
+.logo-image {
+    width: 5%;
 }
 
 .hero {
@@ -204,15 +218,20 @@ header {
 .primary-content--text {
     padding: 0 2em 2em;
 }
-
 .primary-content--link {
-    color: var(--clr-primary);
+    color: var(--clr-accent-700);
     text-decoration: none;
 }
 
+.primary-content--link:hover,
+.primary-content--link:focus {
+    opacity: 0.55;
+    color: var(--clr-accent);
+}
+
 .myInfoContact {
-    background: linear-gradient(-94deg, var(--clr-accent), var(--clr-primary));
-    padding: 2.5em;
+    /* background: linear-gradient(-94deg, var(--clr-accent-200), var(--clr-primary)); */
+    padding-bottom: 2em;
 }
 
 footer {
@@ -231,3 +250,61 @@ footer {
 /* Reusable classes */
 
 /* Custom styling */
+
+/* Media Queries */
+@media screen and (min-width:1100px){
+    .logo {
+        text-align: start;
+    }
+    .logo-image {
+        width: 20%;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: auto;
+        position: relative;
+    }
+    
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__list--primary {
+        margin: 0;
+    }
+
+    .nav__item {
+        margin-left: 1.2em;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero__text {
+        width: 62%;
+    }
+    
+    .hero__img {
+        width: 32%;
+        align-self: flex-start;
+        margin: 0;
+    }
+    
+    footer .row {
+        align-items: flex-end;
+    }
+
+    .connect {
+        margin-left: 2.2em;
+    }
+}

@@ -29,18 +29,17 @@
             <button class="nav-toggle" aria-label="open navigation">
                 <span class="hamburger"></span>
             </button>
-            <a class="logo" href="#">
-                <img src="docs/assets/images/logo.svg" alt="My initials C and F, which stand for Ceesay Fofana">
+            <a class="logo" href="index.html">
+                <img class="logo-image" src="docs/assets/images/logo-cf.png" alt="My initials C and F, which stand for Ceesay Fofana">
             </a>
             <nav class="nav">
                 <ul class="nav__list nav__list--primary">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#myInfo" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#myWork" class="nav__link">Work</a></li>
                 </ul>
                 <ul class="nav__list nav__list--secondary">
-                    <li class="nav__item"><a href="#" class="nav__link">Contact </a></li>
-                    <li class="nav__item"><a href="#" class="nav__link nav__link--button">Contact me</a></li>
+                    <li class="nav__item"><a href="#connect" class="nav__link nav__link--button btn">Connect</a></li>
                 </ul>
             </nav>
         </div> 
@@ -51,15 +50,17 @@
             <div class="hero__text">
                 <h1>Web Developer</h1>
                 <p>HTML | CSS | JavaScript | Java | PHP | Wordpress</p>
+                <div>
+                    <a class="btn btn-dark" href="#contact">Work with me</a>
+                </div>
             </div>
-            <img src="docs/assets/images/my-pic.png" alt="My picture" class="hero__img">
-            <a class="cta-btn" href="#contact">Work with me</a>
+            <img class="hero__img" src="docs/assets/images/my-pic.png" alt="My picture">
         </div>
     </section>
 
     <main class="main">
-        <section class="portfolio-content">
-            <h2 class="portfolio-content--title">My Work</h2>            
+        <section class="portfolio-content" id="myWork">
+            <h2 class="portfolio-content--title">Previous Work</h2>            
             <div class="container row">
 
                 <div class="primary-content portfolio">
@@ -155,10 +156,10 @@
             <div class="container">
                 <div class="row">
                     <div class="myInfo" id="myInfo">
-                        <div class="headInfo">My Info</div>
+                        <h3 class="headInfo">My Info</h3>
                         <p>A web developer involved in all stages of development. I write testable code that follows current best practices. I make sure that my sites have cross browser compatibility and work on multiple devices. </p>
                     </div>
-                    <div id="contact">
+                    <div class="connect" id="connect">
                         <h3>Wanna learn more? You can reach me at:</h3>
                         <p>cfofana51@muleriders.saumag.edu</p>
                         <p>(206) 790 4165</p>
@@ -182,7 +183,7 @@
                         </a>
                     </div>
                     <div class="col">
-                        <p class="copyright">Copyright &copy; 2025 </p>
+                        <p class="copyright">Copyright &copy;</p>
                     </div>
                 </div>
             </div>
