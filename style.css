@@ -298,6 +298,10 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
+    .portfolio-content.row {
+    flex-wrap: wrap;
+
+    }
     .hero__text {
         width: 62%;
     }
@@ -308,6 +312,9 @@ footer {
         margin: 0;
     }
     
+    .myInfoContact.row {
+    }
+
     footer .row {
         align-items: flex-end;
     }
